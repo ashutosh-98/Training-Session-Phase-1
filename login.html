@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="loginStyle.css">
+	<script src="script1.js">		
+	</script>
+	<title>Login</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<header>
+			<h1 style="color: darkslategrey; text-align: center;">Car Blog</h1>
+		</header>
+		<div class="row bg bg-dark">
+			<div class="col">
+				<nav class="navbar navbar-expand-md dark navbar-dark">
+					<a class="navbar-brand" href="homePage.html">CB</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleMenu">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleMenu">
+						<ul class="navbar-nav nav nav-pills">
+							<li class="nav-item">
+								<a class="nav-link" href="homePage.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="postArticle.html">Post Article</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#">Login</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.simplilearn.com/about-us">About Us</a>
+							</li>
+						</ul>
+					</div>
+					<form class="form-inline">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search">
+						<button class="btn btn-success" type="submit">Search</button>
+					</form>
+				</nav>
+			</div>
+		</div>
+		<div class="row align-self-center" style="background-color: green; text-align:center;">
+			<div class="col">
+				<h2 style="color:white;  text-align:center;">Login or SignUp</h2>
+			</div>
+		</div>
+		<div class="row">
+			<img src="login_avatar1.png" class="img-fluid mx-auto d-block" id="avatarImg">
+		</div>
+		<div class="row align-self-center">
+			<form class="form-group" style="border: 3px solid black; margin:auto" id="formOne">
+				<div class="container" id="loginForm" style="padding: 16px;">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname"  class="form-control" id="txtuserName">
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" class="form-control" id="txtuserPassword"> 
+					<button type="button" id="loginButton" onclick="loginEventHandler();">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					<div class="form-group">
+						<p id="errorMessage"></p>
+					</div>
+					<div class="container" style="background-color:#f1f1f1; padding: 10px;">
+						<button type="button" class="cancelbtn">Cancel</button>
+						<span class="psw"><a href="#">Forgot password?</a></span>
+					</div>
+					<div class="container" style="padding: 10px;">
+						<b>Don't have an account</b>
+						<button type="button" id="signUpButton">Sign Up</button>
+					</div>	
+				</div>				
+			</form>
+		</div>
+		<footer style="margin-top:10px;">
+            <div class="row  bg bg-dark">
+                <div class="col align-self-center">
+                    <h3 style="color:white;text-align:center">Connect with us at:</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-1-sm align-self-center justify-content-around">
+                    <a href="https://www.facebook.com"> <span class="fa fa-facebook fa-3x"></span></a>
+                </div>
+                <div class="col-1-sm align-self-center justify-content-around offset-1">
+                    <a href="https://www.twitter.com"> <span class="fa fa-twitter fa-3x"></span></a>
+                </div>
+                <div class="col-1-sm align-self-center justify-content-around offset-1">
+                    <a href="https://www.instagram.com"> <span class="fa fa-instagram fa-3x"></span></a>
+                </div>
+                <div class="col-1-sm align-self-center justify-content-around offset-1">
+                    <a href="https://www.youtube.com"> <span class="fa fa-youtube fa-3x"></span></a>
+                </div>               
+            </div>
+        </footer>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

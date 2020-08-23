@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <title>Car Blog</title>
+  <style>
+    body {
+      background-color: grey;
+    }
+
+    .carousel-inner img {
+      min-width: 80vw;
+      max-width: 80vw;
+      height: 40vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <div class="row align-self-center">
+        <div class="col align-self-center" style="text-align:center;">
+          <h1 style="font-family:Sofia; font-style:italic;"><b>Welcome to Car Blog!!</b></h1>
+        </div>
+      </div>
+      <div class="row bg bg-dark">
+        <div class="col">
+          <nav class="navbar navbar-expand-md dark navbar-dark">
+            <a class="navbar-brand" href="#">CB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleMenu">
+              <ul class="navbar-nav nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="postArticle.html">Post Article</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.simplilearn.com/about-us">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <form class="form-inline" action="#">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <br>
+
+    <div class="carousel slide" data-ride="carousel" id="myCarousel">
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="homepage_carousel1.jpg" alt="Lamborghini Aventador" class="img-fluid mx-auto d-block">
+          <div class="carousel-caption">
+            <h3>Lamborghini Aventador</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="homepage_carousel2.jpg" alt="Audi R8" class="img-fluid mx-auto d-block">
+          <div class="carousel-caption">
+            <h3>Audi R8</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="homepage_carousel3.jpg" alt="Koenigsegg Agera" class="img-fluid mx-auto d-block">
+          <div class="carousel-caption">
+            <h3>Koenigsegg Agera</h3>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <br>
+    <div class="row bg" style="background-color: white; text-align:center;">
+      <div class="col">
+        <b>Latest Car Articles</b>
+      </div>
+    </div>
+    <br>
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <div class="row" style="background-color: #E6E6FA;">
+                <div class="col-6">
+                  <img src="homepage_carousel1.jpg" alt="Lamborghini Aventador" class="img-fluid"
+                    style="max-height=300px;">
+                </div>
+                <div class="col-6 align-self-center">
+                  <h1 style="text-align:center;">Lamborghini Aventador</h1>
+                </div>
+              </div>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <h2 class="card-title">Lamborghini Aventador</h2>
+            <p>The Lamborghini Aventador is a mid-engine sports car produced by the Italian automotive manufacturer Lamborghini. In keeping with Lamborghini tradition, the Aventador is named after a fighting bull.</p>
+            <p>Launched on 28 February 2011 at the Geneva Motor Show, five months after its initial unveiling in Sant'Agata Bolognese, the vehicle, internally codenamed LB834, was designed to replace the then-decade-old Murciélago as the new flagship model.</p>
+            <p>Soon after the Aventador's unveiling, Lamborghini announced that it had sold 12 cars, with deliveries starting in the second half of 2011.By March 2016, Lamborghini had built 5,000 Aventadors, in five years.</p>
+            <p>
+              <b>Peformance:</b>
+              <ul>
+                <li>0–100 km/h (0–62 mph): 2.9 seconds</li>
+                <li>0–161 km/h (0–100 mph): 6.4 seconds</li>
+                <li>400 m (1⁄4 mi): 10.5 seconds at 220 km/h (137 mph)</li>
+                <li>Top speed: (Official) 350 km/h (217 mph)</li>
+                <li>97–0 km/h (60–0 mph): 30 m (100 ft)</li>
+                <li>Cornering – 1.05 g.</li>
+              </ul>
+            </p>
+            <p>The transmission, a single-clutch seven-speed automated electrohydraulic manual, is built by Graziano Trasmissioni. Despite being single-clutch, gear-shifts are accomplished in 50 milliseconds. The new, electronically controlled, all-wheel drive system is developed and supplied by the Swedish company Haldex Traction, offering traction and handling capabilities based on their 4th generation technology. The Lamborghini Aventador LP700-4 was replaced by the facelifted Aventador S in 2016.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="row" style="background-color: #E6E6FA;">
+                <div class="col-6">
+                  <img src="homepage_carousel2.jpg" alt="Audi R8" class="img-fluid"
+                    >
+                </div>
+                <div class="col-6 align-self-center">
+                  <h1 style="text-align:center;">Audi R8</h1>
+                </div>
+              </div>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <h2 class="card-title">Audi R8</h2>
+            <p>The Audi R8 is a mid-engine, 2-seater sports car, which uses Audi's trademark quattro permanent all-wheel drive system. It was introduced by the German car manufacturer Audi AG in 2006.</P>
+            <p>The car is exclusively designed, developed, and manufactured by Audi AG's private subsidiary company manufacturing high performance automotive parts, Audi Sport GmbH (formerly quattro GmbH), and is based on the Lamborghini Gallardo and presently the Huracán platform. The fundamental construction of the R8 is based on the Audi Space Frame, and uses an aluminium monocoque which is built using space frame principles. The car is built by Audi Sport GmbH in a newly renovated factory at Audi's 'aluminium site' at Neckarsulm in Germany.</p>
+            <p>It is also the first production car with full-LED headlamps.</p>
+            <p>The Audi R8, based on the Audi Le Mans quattro concept car (designed by Frank Lamberty and Julian Hoenig) first appeared at the 2003 International Geneva Motor Show and the 2003 Frankfurt International Motor Show. The R8 road car was officially launched at the Paris Auto Show on 30 September 2006. There was some confusion with the name, which the car shares with the 24 Hours of Le Mans winning R8 Le Mans Prototype (LMP). Initial models included the R8 4.2 FSI coupé (with a V8 engine) and R8 5.2 FSI coupé (with a V10 engine). Convertible models, called the Spyder by the manufacturer, were introduced in 2008. Followed by the high-performance GT model introduced in 2011. The Motorsport variants of the R8 were also subsequently introduced from 2008 onwards. An all-electric version called the e-Tron started development but would only reach production stage when the second generation model would be introduced.</p>
+            <p>6-time 24 Hours of Le Mans winner Jacky Ickx described the R8 as "the best handling road car today".</p>
+            <p>The car received a facelift in 2012 and a new model called the V10 Plus was now added to the range. Production of the Type 42 ended in August 2015.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <div class="row" style="background-color: #E6E6FA;">
+                <div class="col-6">
+                  <img src="homepage_carousel3.jpg" alt="Koenigsegg Agera" class="img-fluid">
+                </div>
+                <div class="col-6 align-self-center">
+                  <h1 style="text-align:center;">Koenigsegg Agera</h1>
+                </div>
+              </div>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <h2 class="card-title">Koenigsegg Agera</h2>
+            <p>The Koenigsegg Agera is a mid-engine sports car produced by Swedish car manufacturer Koenigsegg. It is a successor to the CCX/CCXR. The name comes from the Swedish verb 'agera' which means "to act" or in imperative form "(You) act!".</p>
+            <p>It was named Hypercar of the Year in 2010 by Top Gear magazine. The Agera RS variant became the world's fastest production car in 2017, setting a record with a GPS-verified two-way average top speed of 447 km/h (278 mph) and a fastest straight-line speed of 458 km/h (285 mph).</p>
+            <p>The Agera ceased production in July 2018 with the unveiling of the two final edition cars at the 2018 Goodwood Festival of Speed. It was succeeded by the Jesko in 2019.</p>
+            <p>In early development, the car was fitted with a 4.7-litre V8 engine with fixed-vane twin-turbochargers, but the engine was replaced with a 5.0-litre twin-turbocharged V8 for the production version of the car.</p>
+            <p>The Agera is powered by an in-house developed 5.0-litre V8 engine based on the Ford modular engine block and fitted with twin-turbochargers which generates a maximum power output of 706 kW (960 PS; 947 hp) at 6,900 rpm and 1,100 N⋅m (811 lbf⋅ft) of torque at 4,000 rpm. The total weight of the engine is only 197 kg (434 lb) due to a carbon fibre inlet manifold and aluminium construction. The transmission is a specially developed 7-speed dual-clutch with paddle shifters. It is the first dual-clutch transmission to feature only one input shaft. The second clutch slows down the input shaft during up shifts in order to reduce the time it takes to synchronise the next gear, resulting in faster shift times. Most notably, the transmission weighs only 81 kg (179 lb).</p>
+            <p><b>Peformance:</b>
+              <ul>
+                <li>0–100 km/h (0–62 mph) in 2.8 seconds</li>
+                <li>0–200 km/h (0–124 mph) in 8.0 seconds</li>
+                <li>0–200–0 km/h (0–124–0 mph) in 13.5 seconds</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <footer>
+      <div class="row  bg bg-dark">
+        <div class="col align-self-center">
+          <h3 style="color:white;text-align:center">Connect with us at:</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center bg bg-light">
+        <div class="col-1-sm align-self-center justify-content-around">
+          <a href="https://www.facebook.com"> <span class="fa fa-facebook fa-3x"></span></a>
+        </div>
+        <div class="col-1-sm align-self-center justify-content-around offset-1">
+          <a href="https://www.twitter.com"> <span class="fa fa-twitter fa-3x"></span></a>
+        </div>
+        <div class="col-1-sm align-self-center justify-content-around offset-1">
+          <a href="https://www.instagram.com"> <span class="fa fa-instagram fa-3x"></span></a>
+        </div>
+        <div class="col-1-sm align-self-center justify-content-around offset-1">
+          <a href="https://www.youtube.com"> <span class="fa fa-youtube fa-3x"></span></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

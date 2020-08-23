@@ -1,0 +1,63 @@
+#avatarImg{
+  border-style: solid;
+  max-height: 250px;
+  max-width: 250px;
+  margin-top:25px;
+  margin-bottom: 25px;;
+}
+
+#loginForm{
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+padding: 6px 10px;
+margin: 4px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+} 
+
+ #loginButton {
+  background-color: #4CAF50;
+ color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+} 
+
+#loginButton:hover{
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color:white;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelbtn:hover{
+  opacity: 0.8;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#signUpButton{
+  background-color: #4CAF50;
+  color: white;
+   padding: 7px;
+   margin: 4px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+}
